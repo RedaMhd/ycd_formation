@@ -486,7 +486,7 @@ button:focus-visible {
 
 .formule-populaire {
   border: 2px solid #FF6B2C;
-  box-shadow: 0 10px 25px rgba(255, 107, 44, 0.2);
+  box-shadow: 0 5px 25px rgba(255, 107, 44, 0.2);
 }
 
 .badge-populaire {
@@ -552,12 +552,54 @@ button:focus-visible {
   height: 100vh;
 }
 
-/* .contact-form > label{
-  display: flex;
-  justify-self: self-start;
-} */
+.contact-form{
+  padding: 10px;
+  width: 500px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
 
 .contact-form > input{
   display: flex;
   justify-self: self-end;
+  width: 70%;
+}
+
+.contact-form > textarea{
+  display: block;
+  justify-self: center;
+  width: 90%;
+  height: 100px;
+  border: 0 5px 0 0 solid rebeccapurple;
+}
+
+.contact-form > #btn{
+  /* display: block;
+  justify-self: center;
+  font-size: large;
+  padding: 10px 0;
+  text-decoration-style: double;
+  margin: 5% 0;
+  width: 50%;
+  border: 2px solid  #FF6B2C;
+  background-color: #FFFFFF; */
+  display: block;
+  justify-self: center;
+  margin-block: 20px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+
+  background-color: #FFFFFF;
+  border: 1px solid #FF6B2C;
+  color: #F05817;
+}
+
+.contact-form > #btn:hover {
+  background-color: #F05817;
+  color: #FFFFFF;
+
 }

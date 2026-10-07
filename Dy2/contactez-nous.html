@@ -25,21 +25,23 @@
     </header>
     <div>
         <div class="contact-nous">
-            <form class="contact-form">
-                <label for="non">Nom :</label>
-                <input type="text" id="non" placeholder="ex : Reda">
+            <form action="index.html" class="contact-form formule-populaire">
+                <label for="non" aria-required="true">Nom :</label>
+                <input type="text" id="non" placeholder="ex : Reda" required>
                 
                 <label for="pnom">Prenom :</label>
-                <input type="text" id="pnom" placeholder="ex : MOUHDI">
+                <input type="text" id="pnom" placeholder="ex : MOUHDI"  required>
                 
                 <label for="phone">Num Telephone :</label>
-                <input type="text" id="phone" placeholder="ex : 0653392315">
+                <input type="text" id="phone" placeholder="ex : 0653392315"  required>
                 
                 <label for="email">Emaile :</label>
-                <input type="text" id="email" placeholder="ex : mouhdi.reda@gmail.com">
+                <input type="text" id="email" placeholder="ex : mouhdi.reda@gmail.com"  required>
                 
                 <label for="massage">Message</label>
-                <textarea id="massage"></textarea>
+                <textarea id="massage"  required></textarea>
+
+                <input id="btn" class="bouton bouton-secondaire" type="submit" value="Envoyer">
             </form>
         </div>
     </div>
