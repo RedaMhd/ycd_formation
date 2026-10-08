@@ -16,7 +16,10 @@ body {
   background-color: #F7F8FA;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Poppins', Arial, sans-serif;
   color: #0F1B2D;
 }
@@ -194,6 +197,11 @@ button:focus-visible {
   gap: 32px;
 }
 
+.conteneur>nav img {
+  height: 25px;
+  display: none;
+}
+
 .menu a {
   font-weight: 500;
   padding-bottom: 4px;
@@ -272,7 +280,7 @@ button:focus-visible {
   color: #0F1B2D;
 }
 
-.chiffre + .chiffre {
+.chiffre+.chiffre {
   border-left: 1px solid #E5E7EB;
 }
 
@@ -361,7 +369,7 @@ button:focus-visible {
   overflow: hidden;
 }
 
-.carte-programme > img {
+.carte-programme>img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -420,7 +428,7 @@ button:focus-visible {
   color: #0F1B2D;
 }
 
-.programme-corps h3 + p {
+.programme-corps h3+p {
   margin-bottom: 16px;
 }
 
@@ -545,27 +553,28 @@ button:focus-visible {
   font-size: 13px;
   color: #94A3B8;
 }
-.contact-nous{
+
+.contact-nous {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.contact-form{
+.contact-form {
   padding: 10px;
   width: 500px;
   background-color: #FFFFFF;
   border-radius: 8px;
 }
 
-.contact-form > input{
+.contact-form>input {
   display: flex;
   justify-self: self-end;
   width: 70%;
 }
 
-.contact-form > textarea{
+.contact-form>textarea {
   display: block;
   justify-self: center;
   width: 90%;
@@ -573,7 +582,7 @@ button:focus-visible {
   border: 0 5px 0 0 solid rebeccapurple;
 }
 
-.contact-form > #btn{
+.contact-form>#btn {
   /* display: block;
   justify-self: center;
   font-size: large;
@@ -598,8 +607,45 @@ button:focus-visible {
   color: #F05817;
 }
 
-.contact-form > #btn:hover {
+.contact-form>#btn:hover {
   background-color: #F05817;
   color: #FFFFFF;
 
 }
+
+@media screen and (max-width : 880px) {
+  .en-tete {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #d5c0b7;
+    border-bottom: 1px solid #E5E7EB;
+  }
+
+  .en-tete-contenu {
+    height: auto;
+  }
+
+  .conteneur> nav > ul{
+    display: none;
+  } 
+
+  .conteneur>nav img {
+    height: 25px;
+    display: block;
+  }
+
+  .conteneur nav:hover ul {
+    display: flex;
+    flex-dirc: column;
+    background-color: #E5E7EB;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+}
+
+
+}
+
+
+@media screen and (max-wdth : 550px) {}
