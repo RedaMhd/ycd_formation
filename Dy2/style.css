@@ -183,6 +183,11 @@ button:focus-visible {
   color: #0F1B2D;
 }
 
+.logo img{
+  box-sizing: content-box;
+  height: 80px;
+}
+
 .logo::after {
   content: "";
   width: 10px;
@@ -561,6 +566,12 @@ button:focus-visible {
   height: 100vh;
 }
 
+.contact-form h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #FF6B2C;
+}
+
 .contact-form {
   padding: 10px;
   width: 500px;
@@ -583,15 +594,7 @@ button:focus-visible {
 }
 
 .contact-form>#btn {
-  /* display: block;
-  justify-self: center;
-  font-size: large;
-  padding: 10px 0;
-  text-decoration-style: double;
-  margin: 5% 0;
-  width: 50%;
-  border: 2px solid  #FF6B2C;
-  background-color: #FFFFFF; */
+
   display: block;
   justify-self: center;
   margin-block: 20px;
@@ -613,7 +616,14 @@ button:focus-visible {
 
 }
 
-@media screen and (max-width : 880px) {
+
+@media screen and (max-width : 770px) {
+  body {
+    width: 100vh;
+    zoom: 100%;
+  }
+
+  
   .en-tete {
     position: sticky;
     top: 0;
@@ -626,9 +636,9 @@ button:focus-visible {
     height: auto;
   }
 
-  .conteneur> nav > ul{
+  .conteneur>nav>ul {
     display: none;
-  } 
+  }
 
   .conteneur>nav img {
     height: 25px;
@@ -637,15 +647,38 @@ button:focus-visible {
 
   .conteneur nav:hover ul {
     display: flex;
-    flex-dirc: column;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
     background-color: #E5E7EB;
     border-radius: 5px;
     position: absolute;
+    padding-top: 30px;
+    top: 53px;
     right: 20px;
+  }
+
+  
+  .hero-contenu , .apropos-contenu  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cartes{
+    display: block;
+  }
+  .carte-programme{
+    margin-bottom: 20px;
+    height: 25%;
+  }
+  .carte-programme>img{
+    height: auto;
+  }
+
+  .formules > .cartes{
+    display: flex;
+  }
 }
 
 
-}
-
-
-@media screen and (max-wdth : 550px) {}
